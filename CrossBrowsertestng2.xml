@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test thread-count="5" name="TestRunner1">
+	  <parameter name="BROWSER" value="chrome"/>
+	  <parameter name="URL" value="http://localhost:8888/index.php"/>
+	  <parameter name="Username" value="admin"/>
+	  <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="Campaigns.CreateCampaignsTest"/>
+    </classes>
+  </test>
+    <test thread-count="5" name="TestRunner2">
+	  <parameter name="BROWSER" value="edge"/>
+	  <parameter name="URL" value="http://localhost:8888/index.php"/>
+	  <parameter name="Username" value="admin"/>
+	  <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="ContactPage.CreateContactTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
