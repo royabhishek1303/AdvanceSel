@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-19T11:35:04 IST" name="Default suite" finished-at="2025-07-19T11:35:05 IST" duration-ms="839">
+  <suite started-at="2025-07-19T11:41:12 IST" name="Default suite" finished-at="2025-07-19T11:41:13 IST" duration-ms="780">
     <groups>
     </groups>
-    <test started-at="2025-07-19T11:35:04 IST" name="Default test" finished-at="2025-07-19T11:35:05 IST" duration-ms="839">
+    <test started-at="2025-07-19T11:41:12 IST" name="Default test" finished-at="2025-07-19T11:41:13 IST" duration-ms="780">
       <class name="Campaigns.CreateCampaignsTest">
-        <test-method is-config="true" signature="BS()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:35:04 IST" name="BS" finished-at="2025-07-19T11:35:04 IST" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:41:12 IST" name="BS" finished-at="2025-07-19T11:41:12 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="BT()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:35:04 IST" name="BT" finished-at="2025-07-19T11:35:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BT()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:41:12 IST" name="BT" finished-at="2025-07-19T11:41:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BT -->
-        <test-method is-config="true" signature="BC()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:35:04 IST" name="BC" finished-at="2025-07-19T11:35:05 IST" duration-ms="713" status="FAIL">
+        <test-method is-config="true" signature="BC()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:41:12 IST" name="BC" finished-at="2025-07-19T11:41:13 IST" duration-ms="632" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null]]>
@@ -54,11 +54,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:35:05 IST" name="BM" finished-at="2025-07-19T11:35:05 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="BM()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:41:13 IST" name="BM" finished-at="2025-07-19T11:41:13 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BM -->
-        <test-method signature="createCampaignsTest()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:35:05 IST" name="createCampaignsTest" finished-at="2025-07-19T11:35:05 IST" duration-ms="0" status="SKIP">
+        <test-method signature="createCampaignsTest()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:41:13 IST" name="createCampaignsTest" finished-at="2025-07-19T11:41:13 IST" duration-ms="1" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is null]]>
@@ -97,19 +97,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignsTest -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:35:05 IST" name="AM" finished-at="2025-07-19T11:35:05 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="AM()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:41:13 IST" name="AM" finished-at="2025-07-19T11:41:13 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:35:05 IST" name="AC" finished-at="2025-07-19T11:35:05 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="AC()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:41:13 IST" name="AC" finished-at="2025-07-19T11:41:13 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AC -->
-        <test-method is-config="true" signature="AT()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:35:05 IST" name="AT" finished-at="2025-07-19T11:35:05 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="AT()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:41:13 IST" name="AT" finished-at="2025-07-19T11:41:13 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AT -->
-        <test-method is-config="true" signature="AS()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:35:05 IST" name="AS" finished-at="2025-07-19T11:35:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AS()[pri:0, instance:Campaigns.CreateCampaignsTest@291b4bf5]" started-at="2025-07-19T11:41:13 IST" name="AS" finished-at="2025-07-19T11:41:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AS -->
