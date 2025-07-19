@@ -70,10 +70,10 @@ public class Base_Class {
 		//String BROWSER = System.getProperty("Browser");
 		if (BROWSER.equalsIgnoreCase("edge")) {
 		    // ✅ Set the absolute path to your downloaded Edge driver
-		    System.setProperty("webdriver.edge.driver", "C:\\Users\\HP\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+		    System.setProperty("webdriver.edge.driver", "C:\\Users\\HP\\Downloads\\edgedriver_win64 (4)\\msedgedriver.exe");
 
 		    // 💡 Optional: Check if the file exists before launching
-		    File edgeDriverFile = new File("C:\\Users\\HP\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+		    File edgeDriverFile = new File("C:\\Users\\HP\\Downloads\\edgedriver_win64 (4)\\msedgedriver.exe");
 		    if (!edgeDriverFile.exists()) {
 		        throw new RuntimeException("EdgeDriver not found at specified path.");
 		    }
