@@ -37,30 +37,66 @@ public class Base_Class {
 	public void BT() {
 		System.out.println("Parell execution");
 	}
-	@BeforeClass(groups = {"smoke", "regression"})
+	//@BeforeClass(groups = {"smoke", "regression"})
+	@BeforeClass(groups = {"smokeTest", "regressionTest"})
+	public void BC() throws Throwable {
+	    File_Utility flib = new File_Utility();
+	    String BROWSER = flib.getKeyAndValue("browser");
 
-	public void BC() throws Throwable
-	{
-		//reading keys from properties file
-		File_Utility flib = new File_Utility();
-		String BROWSER = flib.getKeyAndValue("browser");
-	
-		//reading keys from cmd prompt
-//		String BROWSER = System.getProperty("browser");
-		
-		if (BROWSER.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
-		} else if (BROWSER.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
-		} else if (BROWSER.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
-		} else {
-			driver = new FirefoxDriver();
-		}
-		System.out.println("Browser Launching");
-		
-		sdriver=driver;
+	    if (BROWSER.equalsIgnoreCase("chrome")) {
+	        driver = new ChromeDriver();
+
+	    } else if (BROWSER.equalsIgnoreCase("firefox")) {
+	        driver = new FirefoxDriver();
+
+	    } else if (BROWSER.equalsIgnoreCase("edge")) {
+	        String edgePath = "C:\\Drivers\\msedgedriver.exe";
+	        File edgeDriverFile = new File(edgePath);
+
+	        if (!edgeDriverFile.exists()) {
+	            throw new RuntimeException("EdgeDriver not found at: " + edgePath);
+	        }
+
+	        System.setProperty("webdriver.edge.driver", edgePath);
+
+	        EdgeOptions options = new EdgeOptions();
+	        options.addArguments("--remote-debugging-port=63491");
+	        options.addArguments("--disable-gpu");
+	        options.addArguments("--no-sandbox");
+	        options.addArguments("--disable-popup-blocking");
+	        options.addArguments("--disable-extensions");
+
+	        driver = new EdgeDriver(options);
+	    } else {
+	        throw new IllegalArgumentException("Unsupported browser: " + BROWSER);
+	    }
+
+	    System.out.println("🌐 Browser launching: " + BROWSER);
+	    sdriver = driver;
 	}
+
+//	public void BC() throws Throwable
+//	{
+//		//reading keys from properties file
+//		File_Utility flib = new File_Utility();
+//		String BROWSER = flib.getKeyAndValue("browser");
+//	
+//		//reading keys from cmd prompt
+////		String BROWSER = System.getProperty("browser");
+//		
+//		if (BROWSER.equalsIgnoreCase("chrome")) {
+//			driver = new ChromeDriver();
+//		} else if (BROWSER.equalsIgnoreCase("firefox")) {
+//			driver = new FirefoxDriver();
+//		} else if (BROWSER.equalsIgnoreCase("edge")) {
+//			driver = new EdgeDriver();
+//		} else {
+//			driver = new FirefoxDriver();
+//		}
+//		System.out.println("Browser Launching");
+//		
+//		sdriver=driver;
+//	}
 	@BeforeMethod(groups = {"smoke", "regression"})
 
 	public void BM() throws Throwable {
