@@ -40,6 +40,7 @@ public class CreateOrganizationLinkTest extends Base_Class {
 		
       //branch1--smokeTest
     	//checking git bash
+    	//Test
 	     HomePage homePage = new HomePage(driver);
 	     homePage.clickToOrgLink();
 	 	OrganizationPage org = new OrganizationPage(driver);

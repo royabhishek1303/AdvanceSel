@@ -42,24 +42,45 @@ public class Base_Class {
 	public void BC() throws Throwable {
 		
 		File_Utility fUtil = new File_Utility();
-		String BROWSER = fUtil.getKeyAndValue("Browser");
-
-		//String BROWSER = System.getProperty("Browser");
 		
-		if(BROWSER.equalsIgnoreCase("chrome")) {
-			driver=new ChromeDriver();
-		}else if(BROWSER.equalsIgnoreCase("edge")) {
-			driver=new EdgeDriver();
+			//reading keys from properties file
+			//File_Uitility flib = new File_Uitility();
+			String BROWSER = fUtil.getKeyAndValue("browser");
+		
+			//reading keys from cmd prompt
+//			String BROWSER = System.getProperty("browser");
 			
-		}else {
-			driver=new FirefoxDriver();
+			if (BROWSER.equalsIgnoreCase("chrome")) {
+				driver = new ChromeDriver();
+			} else if (BROWSER.equalsIgnoreCase("firefox")) {
+				driver = new FirefoxDriver();
+			} else if (BROWSER.equalsIgnoreCase("edge")) {
+				driver = new EdgeDriver();
+			} else {
+				driver = new FirefoxDriver();
+			}
+			System.out.println("Browser Launching");
+			
+			sdriver=driver;
 		}
-	    Web_Driver_Utility wdu = new Web_Driver_Utility();
-	    wdu.maximizeWindow(driver);
-	    wdu.waitElmentsToLoad(driver);
-		System.out.println("Launching the Browser");
-		sdriver=driver;
-	}
+//		String BROWSER = fUtil.getKeyAndValue("Browser");
+//
+//		//String BROWSER = System.getProperty("Browser");
+//		
+//		if(BROWSER.equalsIgnoreCase("chrome")) {
+//			driver=new ChromeDriver();
+////		}else if(BROWSER.equalsIgnoreCase("edge")) {
+////			driver=new EdgeDriver();
+//			
+//		}else {
+//			driver=new FirefoxDriver();
+//		}
+//	    Web_Driver_Utility wdu = new Web_Driver_Utility();
+//	    wdu.maximizeWindow(driver);
+//	    wdu.waitElmentsToLoad(driver);
+//		System.out.println("Launching the Browser");
+//		sdriver=driver;
+//	}
 //	@Parameters({"URL","Username","Password"})
 	
 	
