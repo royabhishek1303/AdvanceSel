@@ -69,8 +69,8 @@ public class Base_Class {
 		
 		if(BROWSER.equalsIgnoreCase("chrome")) {
 			driver=new ChromeDriver();
-//		}else if(BROWSER.equalsIgnoreCase("edge")) {
-//			driver=new EdgeDriver();
+		}else if(BROWSER.equalsIgnoreCase("edge")) {
+		driver=new EdgeDriver();
 			
 		}else {
 			driver=new FirefoxDriver();

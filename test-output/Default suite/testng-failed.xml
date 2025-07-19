@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Campaigns.CreateCampaignsTest">
+      <class name="ContactPage.CreateContactTest">
         <methods>
           <include name="BM"/>
-          <include name="createCampaignsTest"/>
           <include name="AM"/>
+          <include name="createContactTest"/>
           <include name="BC"/>
           <include name="BS"/>
           <include name="AC"/>
@@ -15,7 +15,7 @@
           <include name="AS"/>
           <include name="AT"/>
         </methods>
-      </class> <!-- Campaigns.CreateCampaignsTest -->
+      </class> <!-- ContactPage.CreateContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
