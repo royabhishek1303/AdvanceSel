@@ -1,5 +1,7 @@
 package Genric_utility;
 
+import java.io.File;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -66,15 +68,27 @@ public class Base_Class {
 		String BROWSER = fUtil.getKeyAndValue("Browser");
 
 		//String BROWSER = System.getProperty("Browser");
-		
-		if(BROWSER.equalsIgnoreCase("chrome")) {
-			driver=new ChromeDriver();
-		}else if(BROWSER.equalsIgnoreCase("edge")) {
-		driver=new EdgeDriver();
-			
-		}else {
-			driver=new FirefoxDriver();
+		if (BROWSER.equalsIgnoreCase("edge")) {
+		    // ✅ Set the absolute path to your downloaded Edge driver
+		    System.setProperty("webdriver.edge.driver", "C:\\Users\\HP\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+
+		    // 💡 Optional: Check if the file exists before launching
+		    File edgeDriverFile = new File("C:\\Users\\HP\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+		    if (!edgeDriverFile.exists()) {
+		        throw new RuntimeException("EdgeDriver not found at specified path.");
+		    }
+
+		    driver = new EdgeDriver();
 		}
+		
+//		if(BROWSER.equalsIgnoreCase("chrome")) {
+//			driver=new ChromeDriver();
+//		}else if(BROWSER.equalsIgnoreCase("edge")) {
+//		driver=new EdgeDriver();
+//			
+//		}else {
+//			driver=new FirefoxDriver();
+//		}
 	    Web_Driver_Utility wdu = new Web_Driver_Utility();
 	    wdu.maximizeWindow(driver);
 	    wdu.waitElmentsToLoad(driver);
