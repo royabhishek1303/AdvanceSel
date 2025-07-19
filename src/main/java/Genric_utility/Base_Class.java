@@ -84,14 +84,12 @@ public class Base_Class {
 //		if(BROWSER.equalsIgnoreCase("chrome")) {
 //			driver=new ChromeDriver();
 //		}else if(BROWSER.equalsIgnoreCase("edge")) {
-//		driver=new EdgeDriver();
+//		driver=new EdgeDriver();ss
 //			
 //		}else {
 //			driver=new FirefoxDriver();
 //		}
-	    Web_Driver_Utility wdu = new Web_Driver_Utility();
-	    wdu.maximizeWindow(driver);
-	    wdu.waitElmentsToLoad(driver);
+	  
 		System.out.println("Launching the Browser");
 		sdriver=driver;
 //	}
