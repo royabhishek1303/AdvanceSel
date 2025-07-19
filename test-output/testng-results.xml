@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-19T13:10:03 IST" name="Default suite" finished-at="2025-07-19T13:11:14 IST" duration-ms="71238">
+  <suite started-at="2025-07-19T14:07:17 IST" name="Default suite" finished-at="2025-07-19T14:07:57 IST" duration-ms="40237">
     <groups>
     </groups>
-    <test started-at="2025-07-19T13:10:03 IST" name="Default test" finished-at="2025-07-19T13:11:14 IST" duration-ms="71238">
+    <test started-at="2025-07-19T14:07:17 IST" name="Default test" finished-at="2025-07-19T14:07:57 IST" duration-ms="40237">
       <class name="Campaigns.CreateCampaignsTest">
-        <test-method is-config="true" signature="BS()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T13:10:03 IST" name="BS" finished-at="2025-07-19T13:10:03 IST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T14:07:17 IST" name="BS" finished-at="2025-07-19T14:07:17 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="BT()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T13:10:03 IST" name="BT" finished-at="2025-07-19T13:10:03 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="BT()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T14:07:17 IST" name="BT" finished-at="2025-07-19T14:07:17 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BT -->
-        <test-method is-config="true" signature="BC()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T13:10:03 IST" name="BC" finished-at="2025-07-19T13:10:13 IST" duration-ms="9783" status="PASS">
+        <test-method is-config="true" signature="BC()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T14:07:17 IST" name="BC" finished-at="2025-07-19T14:07:24 IST" duration-ms="6732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T13:10:13 IST" name="BM" finished-at="2025-07-19T13:10:29 IST" duration-ms="15964" status="PASS">
+        <test-method is-config="true" signature="BM()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T14:07:24 IST" name="BM" finished-at="2025-07-19T14:07:33 IST" duration-ms="9638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BM -->
-        <test-method signature="createCampaignsTest()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T13:10:29 IST" name="createCampaignsTest" finished-at="2025-07-19T13:11:11 IST" duration-ms="41796" status="PASS">
+        <test-method signature="createCampaignsTest()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T14:07:34 IST" name="createCampaignsTest" finished-at="2025-07-19T14:07:55 IST" duration-ms="21306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignsTest -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T13:11:11 IST" name="AM" finished-at="2025-07-19T13:11:13 IST" duration-ms="2677" status="PASS">
+        <test-method is-config="true" signature="AM()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T14:07:55 IST" name="AM" finished-at="2025-07-19T14:07:57 IST" duration-ms="1782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T13:11:13 IST" name="AC" finished-at="2025-07-19T13:11:14 IST" duration-ms="754" status="PASS">
+        <test-method is-config="true" signature="AC()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T14:07:57 IST" name="AC" finished-at="2025-07-19T14:07:57 IST" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AC -->
-        <test-method is-config="true" signature="AT()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T13:11:14 IST" name="AT" finished-at="2025-07-19T13:11:14 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AT()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T14:07:57 IST" name="AT" finished-at="2025-07-19T14:07:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AT -->
-        <test-method is-config="true" signature="AS()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T13:11:14 IST" name="AS" finished-at="2025-07-19T13:11:14 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AS()[pri:0, instance:Campaigns.CreateCampaignsTest@424e1977]" started-at="2025-07-19T14:07:57 IST" name="AS" finished-at="2025-07-19T14:07:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AS -->
